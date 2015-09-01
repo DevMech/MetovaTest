@@ -31,9 +31,9 @@
         return false;
     }
     
-    for (int index = 0; index < [pairedParens length]; index = index + 2){
+    for (int i = 0; i < [pairedParens length]; i+= 2){
 
-        NSRange characterRange = NSMakeRange(index, 2);
+        NSRange characterRange = NSMakeRange(i, 2);
         NSString *characters = [pairedParens substringWithRange:characterRange];
         
         if(![characters isEqualToString:@"()"]) {
