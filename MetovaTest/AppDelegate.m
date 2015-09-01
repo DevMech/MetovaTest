@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    if ([self parensCheckFaster:@"()()()()()"]) {
+    if ([self parensCheck:@"()()()()()"]) {
         NSLog(@"It's a pair!");
     } else {
         NSLog(@"Somebody's closer");
